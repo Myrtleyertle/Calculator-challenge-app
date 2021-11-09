@@ -3,7 +3,6 @@ const operatorButton = document.querySelectorAll('[data-operator-button]');
 const clearButton = document.querySelector('[data-clear-button]');
 const equalsButton = document.querySelector('[data-equals-button]');
 const display = document.getElementById('display-value');
-const displayHistory = document.getElementById('display-history');
 const deleteButton = document.querySelector('[data-delete-button]');
 
 function deleteLast() {
@@ -33,5 +32,3 @@ operatorButton.forEach(button => {
 equalsButton.addEventListener('click', () => {
     display.textContent = eval(display.textContent);
 });
-
-displayHistory.textContent = display.textContent;
