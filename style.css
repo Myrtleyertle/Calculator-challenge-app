@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 100vh;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+.container {
+    display: flex;
+    border: 1px solid rgb(182, 0, 0);
+    background-color: hsl(222, 26%, 31%);
+    padding: 1rem;
+    margin: 0;
+    height: 100vh;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-keypad {
+    background-color: hsl(223, 31%, 20%);
+    padding: 1rem;
+    margin: 0 0 1rem 0;
+    border-radius: 5px;
+}
+
+#display-value {
+    background-color: hsl(224, 36%, 15%);
+    width: 97%;
+    font-size: 3rem;
+    height: 70px;
+    padding: 0.5rem;
+    margin: 0 0 1rem 0;
+    border-radius: 10px;
+    color: aliceblue;
+    text-align: end;
+}
+
+button {
+    border: 1px solid hsl(224, 36%, 15%);
+    color: hsl(221, 14%, 31%);
+    padding: 1rem;
+    margin: 0.4rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    width: 100px;
+    height: 55px;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+}
+
+#delete,
+#reset {
+    background-color: hsl(222, 26%, 31%);
+    color: ivory;
+}
+
+#equals {
+    background: hsl(6, 63%, 50%)
+}
+
+#reset,
+#equals {
+    width: 46.7%;
+    color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 500px) {
+    button {
+        width: 70px;
+    }
+    #reset {
+        width: 45%;
+        color: hsl(0, 0%, 100%);
+    }
+    #equals {
+        width: 45%;
+        color: hsl(0, 0%, 100%);
+    }
+}
